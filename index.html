@@ -2,44 +2,62 @@
 <html lang="pt-BR">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Lista de Compras</title>
 </head>
 
 <body>
-    <header>
-        <img src="src/logo.svg" alt="Logo da Lista de Compras"">
+    <main>
+        <header>
+            <img src="src/logo.svg" alt="Logo da Lista de Compras"">
     </header>
+    
+        <span>&larr; Voltar</span>
+        <h1>Compras da semana</h1>
 
-    <span>&larr; Voltar</span>
-    <h1>Compras da semana</h1>
+        <div class=" lista-container">
+            <!-- Formulário para adicionar -->
+            <form class="form-adicionar" action="">
+                <input type="text" placeholder="Adicionar item à lista" class="input">
+                <button type="submit" class="botao-adicionar">Adicionar item</button>
+            </form>
 
-    <form action="">
-        <input type=" text" placeholder="Adicionar item à lista" class="input">
-        <button type="submit" class="botaõ-adicionar">Adicionar item</button>
-        </form>
+            <!-- Lista de itens -->
+            <div class="lista-itens">
+                <div class="item">
+                    <input type="checkbox" id="item1">
+                    <label for="item1">Item 1</label>
+                    <button type="button" class="remove-item"><img src="src/delete-small.svg"
+                            alt="Botão Remover"></button>
+                </div>
 
-        <form action="">
-            <input type="checkbox" id="item">
-            <label for="item1">Item 1</label>
-            <button type="button" class="remove-item"><img src="src/delete-small.svg" alt="Botão Remover"></button>
+                <div class="item">
+                    <input type="checkbox" id="item2">
+                    <label for="item2">Item 2</label>
+                    <button type="button" class="remove-item"><img src="src/delete-small.svg"
+                            alt="Botão Remover"></button>
+                </div>
 
-            <input type="checkbox" id="item">
-            <label for="item2">Item 2</label>
-            <button type="button" class="remove-item"><img src="src/delete-small.svg" alt="Botão Remover"></button>
+                <div class="item">
+                    <input type="checkbox" id="item3">
+                    <label for="item3">Item 3</label>
+                    <button type="button" class="remove-item"><img src="src/delete-small.svg"
+                            alt="Botão Remover"></button>
+                </div>
+            </div>
+            </div>
 
-            <input type="checkbox" id="item">
-            <label for="item3">Item 3</label>
-            <button type="button" class="remove-item"><img src="src/delete-small.svg" alt="Botão Remover"></button>
-        </form>
-
-        <footer>
-            <img src="src/warning-circle-filled.svg" alt="Aviso">
-            O item foi removido da lista
-            <button type="button" class="remove"><img src="src/delete-small.svg" alt="Botão Remover"></button>
-        </footer>
-
+            <footer>
+                <img src="src/warning-circle-filled.svg" alt="Aviso">
+                O item foi removido da lista
+                <button type="button" class="remove"><img src="src/delete-small.svg" alt="Botão Remover"></button>
+            </footer>
+    </main>
 
 </body>
 
