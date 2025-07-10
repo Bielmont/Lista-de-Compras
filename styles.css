@@ -304,7 +304,7 @@ h1 {
 
     /* footer de alerta */
     .footer {
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         text-align: center;
