@@ -28,7 +28,7 @@ function adicionarItem(texto) {
       <span class="checkmark"></span>
     </label>
     <span class="texto">${texto}</span>
-    <button class="botao-remover"><img src="src/Frame-3.svg" alt="Botão Remover"></button>
+    <button class="botao-remover"><img src="src/lixeira.svg" alt="Botão Remover"></button>
   `;
 
     lista.appendChild(novoItem);
